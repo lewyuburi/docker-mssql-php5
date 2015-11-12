@@ -20,6 +20,4 @@ ADD 000-default.conf /etc/apache2/sites-available/
 EXPOSE 80
 EXPOSE 443
 
-VOLUME /var/www
-
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
