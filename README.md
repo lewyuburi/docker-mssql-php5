@@ -2,21 +2,21 @@
 Dockerfile of Apache & PHP Environment with Microsoft SQL Server ODBC Driver Support Built on Ubuntu Trusty
 
 ```bash
-docker pull ppoffice/apache-php-mssql-odbc
+docker pull lyubb/docker-mssql-php5
 ```
 
 ## Build
 ```bash
-docker build -t ppoffice/apache-php-mssql-odbc .
+docker build -t lyubb/docker-mssql-php5 .
 ```
 
 ## Running
 ```bash
-docker run -d -p 80:80 ppoffice/apache-php-mssql-odbc
+docker run -d -p 80:80 lyubb/docker-mssql-php5
 ```
 With custom `www` folder:
 ```bash
-docker run -d -p 80:80 -v (your site's folder):/var/www/ ppoffice/apache-php-mssql-odbc
+docker run -d -p 80:80 -v (your site's folder):/var/www/ lyubb/docker-mssql-php5
 ```
 
 # Other
@@ -27,4 +27,4 @@ ADD locales.conf /etc/freetds/
 ```
 
 ## Issues
-[https://github.com/ppoffice/apache-php-mssql-odbc/issues](https://github.com/ppoffice/apache-php-mssql-odbc/issues)
+[https://github.com/lyubb/docker-mssql-php5](https://github.com/ppoffice/apache-php-mssql-odbc/issues)
