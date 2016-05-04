@@ -10,6 +10,9 @@ RUN apt-get update && \
 RUN /usr/sbin/a2enmod rewrite
 RUN php5enmod mssql
 
+# Edit apache2.conf to change apache site settings.
+ADD apache2.conf /etc/apache2/
+
 # Edit 000-default.conf to change apache site settings.
 ADD 000-default.conf /etc/apache2/sites-available/
 
