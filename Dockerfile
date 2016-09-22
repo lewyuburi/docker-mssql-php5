@@ -20,6 +20,8 @@ ADD 000-default.conf /etc/apache2/sites-available/
 # ADD freetds.conf /etc/freetds/
 # ADD locales.conf /etc/freetds/
 
+VOLUME ["/data"]
+
 EXPOSE 80
 EXPOSE 443
 
